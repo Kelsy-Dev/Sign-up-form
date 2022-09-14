@@ -26,7 +26,7 @@ body > p {
     margin-top: 65px;
     box-shadow: 0px 7px 3px rgba(57, 57, 57, 0.34);
 }
-.trial, form, input {
+.trial, form, input, button {
     border-radius: 7px;
 }
 
@@ -37,9 +37,27 @@ form {
 input {
     border: 1px solid rgb(176, 174, 174);
     margin-top: 16px;
-    padding: 12px 46px; 
+    padding: 12px 0; 
+    padding-right: 30%;
+    padding-left: 20px;
 }
 ::placeholder {
-    margin-right: 20px;
+    font-weight: bold;
     
+}
+
+button {
+    background-color: #38ca8b;
+    border: none;
+    padding: 12px 45px;
+    margin-top: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+.lastp {
+    margin-top: 16px;
+    color: #c4c4c4;
+}
+.terms {
+    color: #ff7978;
 }
