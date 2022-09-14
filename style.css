@@ -29,6 +29,9 @@ body > p {
     border-radius: 7px;
 }
 
+/* ----------FORM---------
+-------------------------- */
+
 form {
     background-color: white;
     margin-top: 30px;
@@ -69,4 +72,29 @@ button {
 
 footer {
     margin: 20px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    container {
+        display: flex;
+        align-items: center;
+    }
+
+    .sections1 {
+        margin-right: 30px;
+        text-align: left;
+
+    }
+    .sections1 > p {
+        margin-top: 20px;
+    }
+    .sections2 {
+        margin-top: 68px;
+    }
+    
+    .trial {
+        padding: 20px;
+    }
 }
