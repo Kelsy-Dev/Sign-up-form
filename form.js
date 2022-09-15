@@ -1,23 +1,15 @@
-const input1 = document.getElementById('forms');
-const buttonn = document.querySelector('button');
+let mail = document.getElementById('email');
 
-// function required(input1) {
-//     if (input1.value.length === 0) {
-//         console.log("Field is empty")
-//         return false;
-//     } return true;
-// }
-
-
-input1.addEventListener("submit", function(e){
-    let message = []
-    if (name.value === '' || name.value === null) {
-        message.push("Field empty")
-    } if (message.length > 0) {
-        e.preventDefault()
-        console.log(message);
-    }
+mail.addEventListener("input", (event) => {
+   if (mail.validity.typeMismatch || mail.value === null) {
+    mail.setCustomValidity("Your email need to have @ and .com included");
+    mail.reportValidity();
+   } mail.setCustomValidity("");
 });
+
+
+
+
 
 
 
