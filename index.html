@@ -40,12 +40,31 @@
   <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
   </div>
 
-  <form id="myform"> 
-    <input type="text" id="username" name="user_name" placeholder="First Name"  >
+  <!-- -------------FORM-----------
+  --------------------------------- -->
+
+  <form id="myform">
+
+    <div class="input-section">
+    <input type="text" id="username" name="user_name" placeholder="First Name">
     <div class="error"></div>
-    <input type="text" id="lstname" name="user_lstname" placeholder="Last Name" required>
+    </div>
+
+    <div class="input-section">
+    <input type="text" id="lstname" name="user_lstname" placeholder="Last Name">
+    <div class="error"></div>
+    </div>
+
+    <div class="input-section">
     <input type="email" id="email" name="user_email" placeholder="Email">
-    <input type="password" id="password" name="user_password" placeholder="Password" required>
+    <div class="error"></div>
+    </div>
+
+    <div class="input-section"> 
+    <input type="password" id="password" name="user_password" placeholder="Password">
+    <div class="error"></div>
+    </div>
+
     <button>Claim your free trial </button>
    
     <div class="lastp">
