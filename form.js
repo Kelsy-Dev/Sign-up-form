@@ -1,25 +1,25 @@
-let mail = document.getElementById('email');
+const form = document.getElementById('myform');
+const username = document.getElementById('name');
+const lastName = document.getElementById('lstname');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 
-mail.addEventListener("input", (event) => {
-   if (mail.validity.typeMismatch || mail.value === null) {
-    mail.setCustomValidity("Your email need to have @ and .com included");
-    mail.reportValidity();
-   } mail.setCustomValidity("");
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    validateInputs();
 });
 
+let message = document.getElementsByTagName('body').innerHTML;
 
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
 
+    if(username.value === '') {
+        console.log("username is required");
+        
 
-
-
-
-//Add an Id on form
-//select the form by id
-//try the addeventlistener
-//DONE
-
-//Change the value on line 14 
-///search why name has a strike through
-//Add another const for name and password maybe 
-//try on w3bschool
-
+    } else {
+        console.log("username working");
+    }
+}
