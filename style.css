@@ -36,6 +36,13 @@ form {
     background-color: white;
     margin-top: 30px;
 }
+
+.error {
+    color: red;
+    text-align: right;
+    font-size: 12px;
+}
+
 input {
     border: 1px solid rgb(176, 174, 174);
     margin-top: 16px;
